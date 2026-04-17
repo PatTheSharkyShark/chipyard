@@ -1,0 +1,110 @@
+testing $random e23cbb39
+== Loading device model file '/home/jia_z/workspace/chipyard/generators/testchipip/src/main/resources/dramsim2_ini/DDR3_micron_64M_8B_x4_sg15.ini' == 
+== Loading system model file '/home/jia_z/workspace/chipyard/generators/testchipip/src/main/resources/dramsim2_ini/system.ini' == 
+===== MemorySystem 0 =====
+CH. 0 TOTAL_STORAGE : 4096MB | 1 Ranks | 16 Devices per rank
+DRAMSim2 Clock Frequency =666666666Hz, CPU Clock Frequency=500000000Hz
+[ISSUE] time=               46675 vmsne.vv  eidx=  0 vs1= 9 vs2= 8 rd= 0 chain=0
+[COMMIT] time=               46675 vmsne.vv  wvd_eg=   0 eidx=  0 rd= 0
+[ISSUE] time=               46676 vmsne.vv  eidx=  4 vs1= 9 vs2= 8 rd= 0 chain=0
+[COMMIT] time=               46676 vmsne.vv  wvd_eg=   0 eidx=  4 rd= 0
+[ISSUE] time=               46677 vmsne.vv  eidx=  8 vs1= 9 vs2= 8 rd= 0 chain=0
+[COMMIT] time=               46677 vmsne.vv  wvd_eg=   0 eidx=  8 rd= 0
+[COMMIT] time=               46687 vmsne.vv  wvd_eg=   0 eidx= 12 rd= 0
+[ISSUE] time=               46689 vadd.vv   eidx=  0 vs1= 9 vs2= 8 rd=16 chain=0
+[COMMIT] time=               46689 vadd.vv   wvd_eg=  64 eidx=  0 rd=16
+[ISSUE] time=               46690 vadd.vv   eidx=  4 vs1= 9 vs2= 8 rd=16 chain=0
+[COMMIT] time=               46690 vadd.vv   wvd_eg=  65 eidx=  4 rd=16
+[ISSUE] time=               46691 vadd.vv   eidx=  8 vs1= 9 vs2= 8 rd=16 chain=0
+[COMMIT] time=               46691 vadd.vv   wvd_eg=  66 eidx=  8 rd=16
+[ISSUE] time=               46692 vadd.vv   eidx= 12 vs1= 9 vs2= 8 rd=16 chain=0
+[COMMIT] time=               46692 vadd.vv   wvd_eg=  67 eidx= 12 rd=16
+[ISSUE] time=               86741 vmsne.vv  eidx=  0 vs1= 9 vs2= 8 rd= 0 chain=0
+[COMMIT] time=               86741 vmsne.vv  wvd_eg=   0 eidx=  0 rd= 0
+[ISSUE] time=               86742 vmsne.vv  eidx=  4 vs1= 9 vs2= 8 rd= 0 chain=0
+[COMMIT] time=               86742 vmsne.vv  wvd_eg=   0 eidx=  4 rd= 0
+[ISSUE] time=               86751 vmsne.vv  eidx=  8 vs1= 9 vs2= 8 rd= 0 chain=0
+[COMMIT] time=               86751 vmsne.vv  wvd_eg=   0 eidx=  8 rd= 0
+[COMMIT] time=               86753 vmsne.vv  wvd_eg=   0 eidx= 12 rd= 0
+[ISSUE] time=               86755 vadd.vv   eidx=  0 vs1= 9 vs2= 8 rd=16 chain=0
+[COMMIT] time=               86755 vadd.vv   wvd_eg=  64 eidx=  0 rd=16
+[ISSUE] time=               86756 vadd.vv   eidx=  4 vs1= 9 vs2= 8 rd=16 chain=0
+[COMMIT] time=               86756 vadd.vv   wvd_eg=  65 eidx=  4 rd=16
+[ISSUE] time=               86757 vadd.vv   eidx=  8 vs1= 9 vs2= 8 rd=16 chain=0
+[COMMIT] time=               86757 vadd.vv   wvd_eg=  66 eidx=  8 rd=16
+[ISSUE] time=               86758 vadd.vv   eidx= 12 vs1= 9 vs2= 8 rd=16 chain=0
+[COMMIT] time=               86758 vadd.vv   wvd_eg=  67 eidx= 12 rd=16
+[ISSUE] time=              115542 vmsgt.vx  eidx=  0 vs1=14 rs2= 8 rd= 0 chain=0
+[COMMIT] time=              115542 vmsgt.vx  wvd_eg=   0 eidx=  0 rd= 0
+[ISSUE] time=              115543 vmsgt.vx  eidx=  4 vs1=14 rs2= 8 rd= 0 chain=0
+[COMMIT] time=              115543 vmsgt.vx  wvd_eg=   0 eidx=  4 rd= 0
+[ISSUE] time=              115544 vmsgt.vx  eidx=  8 vs1=14 rs2= 8 rd= 0 chain=0
+[COMMIT] time=              115544 vmsgt.vx  wvd_eg=   0 eidx=  8 rd= 0
+[COMMIT] time=              115547 vmsgt.vx  wvd_eg=   0 eidx= 12 rd= 0
+[ISSUE] time=              115554 vadd.vv   eidx=  0 vs1= 9 vs2= 8 rd=16 chain=0
+[COMMIT] time=              115554 vadd.vv   wvd_eg=  64 eidx=  0 rd=16
+[ISSUE] time=              115556 vadd.vv   eidx=  4 vs1= 9 vs2= 8 rd=16 chain=0
+[COMMIT] time=              115556 vadd.vv   wvd_eg=  65 eidx=  4 rd=16
+[ISSUE] time=              115557 vadd.vv   eidx=  8 vs1= 9 vs2= 8 rd=16 chain=0
+[COMMIT] time=              115557 vadd.vv   wvd_eg=  66 eidx=  8 rd=16
+[COMMIT] time=              115573 vadd.vv   wvd_eg=  67 eidx= 12 rd=16
+[ISSUE] time=              115574 vsub.vv   eidx=  0 vs1= 8 vs2=16 rd=16 chain=0
+[COMMIT] time=              115574 vsub.vv   wvd_eg=  64 eidx=  0 rd=16
+[ISSUE] time=              115575 vsub.vv   eidx=  4 vs1= 8 vs2=16 rd=16 chain=0
+[COMMIT] time=              115575 vsub.vv   wvd_eg=  65 eidx=  4 rd=16
+[ISSUE] time=              115576 vsub.vv   eidx=  8 vs1= 8 vs2=16 rd=16 chain=0
+[COMMIT] time=              115576 vsub.vv   wvd_eg=  66 eidx=  8 rd=16
+[ISSUE] time=              115577 vsub.vv   eidx= 12 vs1= 8 vs2=16 rd=16 chain=0
+[COMMIT] time=              115577 vsub.vv   wvd_eg=  67 eidx= 12 rd=16
+[ISSUE] time=              155815 vadd.vv   eidx=  0 vs1= 9 vs2= 8 rd=10 chain=0
+[COMMIT] time=              155815 vadd.vv   wvd_eg=  40 eidx=  0 rd=10
+[ISSUE] time=              155816 vadd.vv   eidx=  4 vs1= 9 vs2= 8 rd=10 chain=0
+[COMMIT] time=              155816 vadd.vv   wvd_eg=  41 eidx=  4 rd=10
+[ISSUE] time=              155817 vadd.vv   eidx=  8 vs1= 9 vs2= 8 rd=10 chain=0
+[COMMIT] time=              155817 vadd.vv   wvd_eg=  42 eidx=  8 rd=10
+[COMMIT] time=              155829 vadd.vv   wvd_eg=  43 eidx= 12 rd=10
+[ISSUE] time=              155830 vmsgt.vx  eidx=  0 vs1=14 rs2=10 rd= 0 chain=0
+[COMMIT] time=              155830 vmsgt.vx  wvd_eg=   0 eidx=  0 rd= 0
+[ISSUE] time=              155831 vmsgt.vx  eidx=  4 vs1=14 rs2=10 rd= 0 chain=0
+[COMMIT] time=              155831 vmsgt.vx  wvd_eg=   0 eidx=  4 rd= 0
+[ISSUE] time=              155832 vmsgt.vx  eidx=  8 vs1=14 rs2=10 rd= 0 chain=0
+[COMMIT] time=              155832 vmsgt.vx  wvd_eg=   0 eidx=  8 rd= 0
+[COMMIT] time=              155833 vmsgt.vx  wvd_eg=   0 eidx= 12 rd= 0
+[ISSUE] time=              155835 vadd.vv   eidx=  0 vs1= 9 vs2=10 rd=16 chain=0
+[COMMIT] time=              155835 vadd.vv   wvd_eg=  64 eidx=  0 rd=16
+[ISSUE] time=              155836 vadd.vv   eidx=  4 vs1= 9 vs2=10 rd=16 chain=0
+[COMMIT] time=              155836 vadd.vv   wvd_eg=  65 eidx=  4 rd=16
+[ISSUE] time=              155837 vadd.vv   eidx=  8 vs1= 9 vs2=10 rd=16 chain=0
+[COMMIT] time=              155837 vadd.vv   wvd_eg=  66 eidx=  8 rd=16
+[ISSUE] time=              155838 vadd.vv   eidx= 12 vs1= 9 vs2=10 rd=16 chain=0
+[COMMIT] time=              155838 vadd.vv   wvd_eg=  67 eidx= 12 rd=16
+[ISSUE] time=              196224 vadd.vv   eidx=  0 vs1= 9 vs2= 8 rd=10 chain=0
+[COMMIT] time=              196224 vadd.vv   wvd_eg=  40 eidx=  0 rd=10
+[ISSUE] time=              196225 vadd.vv   eidx=  4 vs1= 9 vs2= 8 rd=10 chain=0
+[COMMIT] time=              196225 vadd.vv   wvd_eg=  41 eidx=  4 rd=10
+[ISSUE] time=              196226 vadd.vv   eidx=  8 vs1= 9 vs2= 8 rd=10 chain=0
+[COMMIT] time=              196226 vadd.vv   wvd_eg=  42 eidx=  8 rd=10
+[COMMIT] time=              196237 vadd.vv   wvd_eg=  43 eidx= 12 rd=10
+[ISSUE] time=              196292 vadd.vv   eidx=  0 vs1= 9 vs2=11 rd=10 chain=0
+[COMMIT] time=              196292 vadd.vv   wvd_eg=  40 eidx=  0 rd=10
+[ISSUE] time=              196293 vadd.vv   eidx=  4 vs1= 9 vs2=11 rd=10 chain=0
+[COMMIT] time=              196293 vadd.vv   wvd_eg=  41 eidx=  4 rd=10
+[ISSUE] time=              196294 vadd.vv   eidx=  8 vs1= 9 vs2=11 rd=10 chain=0
+[COMMIT] time=              196294 vadd.vv   wvd_eg=  42 eidx=  8 rd=10
+[COMMIT] time=              196295 vadd.vv   wvd_eg=  43 eidx= 12 rd=10
+[ISSUE] time=              196296 vmsgt.vx  eidx=  0 vs1=14 rs2=10 rd= 0 chain=0
+[COMMIT] time=              196296 vmsgt.vx  wvd_eg=   0 eidx=  0 rd= 0
+[ISSUE] time=              196297 vmsgt.vx  eidx=  4 vs1=14 rs2=10 rd= 0 chain=0
+[COMMIT] time=              196297 vmsgt.vx  wvd_eg=   0 eidx=  4 rd= 0
+[ISSUE] time=              196298 vmsgt.vx  eidx=  8 vs1=14 rs2=10 rd= 0 chain=0
+[COMMIT] time=              196298 vmsgt.vx  wvd_eg=   0 eidx=  8 rd= 0
+[COMMIT] time=              196299 vmsgt.vx  wvd_eg=   0 eidx= 12 rd= 0
+[ISSUE] time=              196301 vadd.vv   eidx=  0 vs1= 9 vs2=10 rd=16 chain=0
+[COMMIT] time=              196301 vadd.vv   wvd_eg=  64 eidx=  0 rd=16
+[ISSUE] time=              196302 vadd.vv   eidx=  4 vs1= 9 vs2=10 rd=16 chain=0
+[COMMIT] time=              196302 vadd.vv   wvd_eg=  65 eidx=  4 rd=16
+[ISSUE] time=              196303 vadd.vv   eidx=  8 vs1= 9 vs2=10 rd=16 chain=0
+[COMMIT] time=              196303 vadd.vv   wvd_eg=  66 eidx=  8 rd=16
+[ISSUE] time=              196304 vadd.vv   eidx= 12 vs1= 9 vs2=10 rd=16 chain=0
+[COMMIT] time=              196304 vadd.vv   wvd_eg=  67 eidx= 12 rd=16
+*** PASSED *** Completed after               437886 simulation cycles

@@ -66,6 +66,102 @@ trait CanHaveChosenInDTS { this: BaseSubsystem =>
   }
 }
 
+import saturn.rocket.{RocketTCMKey, RocketSGTCMKey, CanHaveRocketTCM}
+
+/** Instantiate periphery TCM(s) specified by RocketTCMKey / RocketSGTCMKey */
+trait CanHaveRocketTCMSubsystem { this: BaseSubsystem with InstantiatesHierarchicalElements =>
+  import freechips.rocketchip.tilelink.{TLRAM, TLFragmenter}
+  import freechips.rocketchip.diplomacy.AddressSet
+  import shuttle.dmem.SGTCM
+
+  private class RocketTCMBank(
+    address: AddressSet,
+    beatBytes: Int,
+    devOverride: MemoryDevice,
+    devName: String
+  )(implicit p: Parameters) extends ClockSinkDomain(ClockSinkParameters())(p) {
+    val ram = LazyModule(new TLRAM(
+      address = address,
+      beatBytes = beatBytes,
+      devOverride = Some(devOverride),
+      devName = Some(devName)
+    ))
+    val node = ram.node
+  }
+
+  private class RocketSGTCMMem(
+    address: AddressSet,
+    beatBytes: Int,
+    devOverride: MemoryDevice,
+    devName: String
+  )(implicit p: Parameters) extends ClockSinkDomain(ClockSinkParameters())(p) {
+    val mem = LazyModule(new SGTCM(
+      address = address,
+      beatBytes = beatBytes,
+      devOverride = Some(devOverride),
+      devName = Some(devName)
+    ))
+    val node = mem.node
+    val sgnode = mem.sgnode
+  }
+
+  private class RocketSGSidebandXbar(implicit p: Parameters) extends ClockSinkDomain(ClockSinkParameters())(p) {
+    val xbar = LazyModule(new TLXbar)
+    val node = xbar.node
+  }
+
+  val rocketTiles = totalTiles.values.collect { case r: RocketTile => r }
+
+  rocketTiles.foreach { tile =>
+    val tcmParams = tile.p(RocketTCMKey)
+    val sgtcmParams = tile.p(RocketSGTCMKey)
+    val tileId = tile.tileId
+    val sbus = locateTLBusWrapper(SBUS)
+
+    // 1. Tightly Coupled Memory (TCM)
+    tcmParams.foreach { params =>
+      val device = new MemoryDevice
+      for (b <- 0 until params.banks) {
+        val bankBase = params.base + b * p(CacheBlockBytes)
+        val bankMask = params.size - 1 - (params.banks - 1) * p(CacheBlockBytes)
+        val tcm = LazyModule(new RocketTCMBank(
+          address = AddressSet(bankBase, bankMask),
+          beatBytes = tile.masterPortBeatBytes,
+          devOverride = device,
+          devName = s"Core $tileId TCM bank $b"
+        ))
+        tcm.clockNode := sbus.fixedClockNode
+        sbus.coupleTo(s"core_${tileId}_tcm_bank_${b}") {
+          tcm.node := TLFragmenter(tile.masterPortBeatBytes, p(CacheBlockBytes)) := TLBuffer() := _
+        }
+      }
+    }
+
+    // 2. Sideband Global TCM (SGTCM) - specifically for Saturn
+    sgtcmParams.foreach { params =>
+      val device = new MemoryDevice
+      val sgtcm = LazyModule(new RocketSGTCMMem(
+        address = AddressSet(params.base, params.size - 1),
+        beatBytes = params.banks, // SGTCM banks are beatBytes in the constructor
+        devOverride = device,
+        devName = s"Core $tileId SGTCM"
+      ))
+      sgtcm.clockNode := sbus.fixedClockNode
+      val sgtcmXbar = LazyModule(new RocketSGSidebandXbar)
+      sgtcmXbar.clockNode := sbus.fixedClockNode
+      sbus.coupleTo(s"core_${tileId}_sgtcm") {
+        sgtcm.node := TLWidthWidget(tile.masterPortBeatBytes) := _
+      }
+      sgtcm.sgnode :*= sgtcmXbar.node
+
+      // SGTCM specialized sideband connection to the instantiated Saturn vector unit
+      tile.vector_unit.collect { case v: saturn.rocket.SaturnRocketUnit => v }.foreach { v =>
+        v.sgNode.foreach { n => sgtcmXbar.node :=* n }
+      }
+    }
+  }
+}
+
 class ChipyardSubsystem(implicit p: Parameters) extends BaseSubsystem
     with InstantiatesHierarchicalElements
     with HasTileNotificationSinks
@@ -77,6 +173,7 @@ class ChipyardSubsystem(implicit p: Parameters) extends BaseSubsystem
     with HasHierarchicalElements
     with CanHaveHTIF
     with CanHaveChosenInDTS
+  with CanHaveRocketTCMSubsystem
 {
   def coreMonitorBundles = totalTiles.values.map {
     case r: RocketTile => r.module.core.rocketImpl.coreMonitorBundle

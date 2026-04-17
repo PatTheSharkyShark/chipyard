@@ -1,0 +1,437 @@
+testing $random e23cbb39
+== Loading device model file '/home/jia_z/workspace/chipyard/generators/testchipip/src/main/resources/dramsim2_ini/DDR3_micron_64M_8B_x4_sg15.ini' == 
+== Loading system model file '/home/jia_z/workspace/chipyard/generators/testchipip/src/main/resources/dramsim2_ini/system.ini' == 
+===== MemorySystem 0 =====
+CH. 0 TOTAL_STORAGE : 4096MB | 1 Ranks | 16 Devices per rank
+DRAMSim2 Clock Frequency =666666666Hz, CPU Clock Frequency=500000000Hz
+[ISSUE] time=               13454 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               13454 wvd_eg= 64 bank_sel=0001 func3=3 func6=23 rd=16 eidx=  0
+[ISSUE] time=               13455 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               13455 wvd_eg= 65 bank_sel=0010 func3=3 func6=23 rd=16 eidx=  4
+[ISSUE] time=               13456 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               13456 wvd_eg= 66 bank_sel=0100 func3=3 func6=23 rd=16 eidx=  8
+[COMMIT] time=               13457 wvd_eg= 67 bank_sel=1000 func3=3 func6=23 rd=16 eidx= 12
+[ISSUE] time=               13458 func3=4 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               13458 wvd_eg= 64 bank_sel=0001 func3=4 func6=14 rd=16 eidx=  0
+[PERMUTE-EXEC] time=               13459 func3=4 func6=14 compress=0 rgather=0 eidx=  0 wvd_eg= 64
+[PERMUTE-WRITE] time=               13459 eg= 64 mask=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+[ISSUE] time=               13491 func3=4 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               13491 wvd_eg= 65 bank_sel=0010 func3=4 func6=14 rd=16 eidx=  4
+[ISSUE] time=               13492 func3=4 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               13492 wvd_eg= 66 bank_sel=0100 func3=4 func6=14 rd=16 eidx=  8
+[PERMUTE-EXEC] time=               13492 func3=4 func6=14 compress=0 rgather=0 eidx=  4 wvd_eg= 65
+[PERMUTE-WRITE] time=               13492 eg= 65 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[PERMUTE-EXEC] time=               13493 func3=4 func6=14 compress=0 rgather=0 eidx=  8 wvd_eg= 66
+[PERMUTE-WRITE] time=               13493 eg= 66 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               13495 func3=4 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=16
+[COMMIT] time=               13495 wvd_eg= 67 bank_sel=1000 func3=4 func6=14 rd=16 eidx= 12
+[PERMUTE-EXEC] time=               13496 func3=4 func6=14 compress=0 rgather=0 eidx= 12 wvd_eg= 67
+[PERMUTE-WRITE] time=               13496 eg= 67 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               20244 func3=4 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               20244 wvd_eg= 64 bank_sel=0001 func3=4 func6=15 rd=16 eidx=  0
+[ISSUE] time=               20245 func3=4 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               20245 wvd_eg= 65 bank_sel=0010 func3=4 func6=15 rd=16 eidx=  4
+[PERMUTE-EXEC] time=               20245 func3=4 func6=15 compress=0 rgather=0 eidx=  0 wvd_eg= 64
+[PERMUTE-WRITE] time=               20245 eg= 64 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               20246 func3=4 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               20246 wvd_eg= 66 bank_sel=0100 func3=4 func6=15 rd=16 eidx=  8
+[PERMUTE-EXEC] time=               20246 func3=4 func6=15 compress=0 rgather=0 eidx=  4 wvd_eg= 65
+[PERMUTE-WRITE] time=               20246 eg= 65 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               20247 func3=4 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=16
+[COMMIT] time=               20247 wvd_eg= 67 bank_sel=1000 func3=4 func6=15 rd=16 eidx= 12
+[PERMUTE-EXEC] time=               20247 func3=4 func6=15 compress=0 rgather=0 eidx=  8 wvd_eg= 66
+[PERMUTE-WRITE] time=               20247 eg= 66 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[PERMUTE-EXEC] time=               20248 func3=4 func6=15 compress=0 rgather=0 eidx= 12 wvd_eg= 67
+[PERMUTE-WRITE] time=               20248 eg= 67 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               26867 func3=6 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               26867 wvd_eg= 64 bank_sel=0001 func3=6 func6=14 rd=16 eidx=  0
+[ISSUE] time=               26868 func3=6 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               26868 wvd_eg= 65 bank_sel=0010 func3=6 func6=14 rd=16 eidx=  4
+[PERMUTE-EXEC] time=               26868 func3=6 func6=14 compress=0 rgather=0 eidx=  0 wvd_eg= 64
+[PERMUTE-WRITE] time=               26868 eg= 64 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               26869 func3=6 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               26869 wvd_eg= 66 bank_sel=0100 func3=6 func6=14 rd=16 eidx=  8
+[PERMUTE-EXEC] time=               26869 func3=6 func6=14 compress=0 rgather=0 eidx=  4 wvd_eg= 65
+[PERMUTE-WRITE] time=               26869 eg= 65 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               26870 func3=6 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=16
+[COMMIT] time=               26870 wvd_eg= 67 bank_sel=1000 func3=6 func6=14 rd=16 eidx= 12
+[PERMUTE-EXEC] time=               26870 func3=6 func6=14 compress=0 rgather=0 eidx=  8 wvd_eg= 66
+[PERMUTE-WRITE] time=               26870 eg= 66 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[PERMUTE-EXEC] time=               26871 func3=6 func6=14 compress=0 rgather=0 eidx= 12 wvd_eg= 67
+[PERMUTE-WRITE] time=               26871 eg= 67 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               33273 func3=6 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               33273 wvd_eg= 64 bank_sel=0001 func3=6 func6=15 rd=16 eidx=  0
+[ISSUE] time=               33274 func3=6 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               33274 wvd_eg= 65 bank_sel=0010 func3=6 func6=15 rd=16 eidx=  4
+[PERMUTE-EXEC] time=               33274 func3=6 func6=15 compress=0 rgather=0 eidx=  0 wvd_eg= 64
+[PERMUTE-WRITE] time=               33274 eg= 64 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               33275 func3=6 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               33275 wvd_eg= 66 bank_sel=0100 func3=6 func6=15 rd=16 eidx=  8
+[PERMUTE-EXEC] time=               33275 func3=6 func6=15 compress=0 rgather=0 eidx=  4 wvd_eg= 65
+[PERMUTE-WRITE] time=               33275 eg= 65 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               33276 func3=6 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=16
+[COMMIT] time=               33276 wvd_eg= 67 bank_sel=1000 func3=6 func6=15 rd=16 eidx= 12
+[PERMUTE-EXEC] time=               33276 func3=6 func6=15 compress=0 rgather=0 eidx=  8 wvd_eg= 66
+[PERMUTE-WRITE] time=               33276 eg= 66 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[PERMUTE-EXEC] time=               33277 func3=6 func6=15 compress=0 rgather=0 eidx= 12 wvd_eg= 67
+[PERMUTE-WRITE] time=               33277 eg= 67 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               39891 func3=4 func6=12 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               39891 wvd_eg= 64 bank_sel=0001 func3=4 func6=12 rd=16 eidx=  0
+[ISSUE] time=               39892 func3=4 func6=12 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               39892 wvd_eg= 65 bank_sel=0010 func3=4 func6=12 rd=16 eidx=  4
+[PERMUTE-EXEC] time=               39892 func3=4 func6=12 compress=0 rgather=1 eidx=  0 wvd_eg= 64
+[PERMUTE-WRITE] time=               39892 eg= 64 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               39893 func3=4 func6=12 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               39893 wvd_eg= 66 bank_sel=0100 func3=4 func6=12 rd=16 eidx=  8
+[PERMUTE-EXEC] time=               39893 func3=4 func6=12 compress=0 rgather=1 eidx=  4 wvd_eg= 65
+[PERMUTE-WRITE] time=               39893 eg= 65 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               39894 func3=4 func6=12 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=16
+[COMMIT] time=               39894 wvd_eg= 67 bank_sel=1000 func3=4 func6=12 rd=16 eidx= 12
+[PERMUTE-EXEC] time=               39894 func3=4 func6=12 compress=0 rgather=1 eidx=  8 wvd_eg= 66
+[PERMUTE-WRITE] time=               39894 eg= 66 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[PERMUTE-EXEC] time=               39895 func3=4 func6=12 compress=0 rgather=1 eidx= 12 wvd_eg= 67
+[PERMUTE-WRITE] time=               39895 eg= 67 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               56610 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               56610 wvd_eg= 64 bank_sel=0001 func3=3 func6=23 rd=16 eidx=  0
+[ISSUE] time=               56611 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               56611 wvd_eg= 65 bank_sel=0010 func3=3 func6=23 rd=16 eidx=  4
+[ISSUE] time=               56612 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               56612 wvd_eg= 66 bank_sel=0100 func3=3 func6=23 rd=16 eidx=  8
+[COMMIT] time=               56613 wvd_eg= 67 bank_sel=1000 func3=3 func6=23 rd=16 eidx= 12
+[ISSUE] time=               56614 func3=4 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               56614 wvd_eg= 64 bank_sel=0001 func3=4 func6=14 rd=16 eidx=  0
+[PERMUTE-EXEC] time=               56615 func3=4 func6=14 compress=0 rgather=0 eidx=  0 wvd_eg= 64
+[PERMUTE-WRITE] time=               56615 eg= 64 mask=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+[ISSUE] time=               56619 func3=4 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               56619 wvd_eg= 65 bank_sel=0010 func3=4 func6=14 rd=16 eidx=  4
+[ISSUE] time=               56620 func3=4 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               56620 wvd_eg= 66 bank_sel=0100 func3=4 func6=14 rd=16 eidx=  8
+[PERMUTE-EXEC] time=               56620 func3=4 func6=14 compress=0 rgather=0 eidx=  4 wvd_eg= 65
+[PERMUTE-WRITE] time=               56620 eg= 65 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               56621 func3=4 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=16
+[COMMIT] time=               56621 wvd_eg= 67 bank_sel=1000 func3=4 func6=14 rd=16 eidx= 12
+[PERMUTE-EXEC] time=               56621 func3=4 func6=14 compress=0 rgather=0 eidx=  8 wvd_eg= 66
+[PERMUTE-WRITE] time=               56621 eg= 66 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[PERMUTE-EXEC] time=               56622 func3=4 func6=14 compress=0 rgather=0 eidx= 12 wvd_eg= 67
+[PERMUTE-WRITE] time=               56622 eg= 67 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               63007 func3=4 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               63007 wvd_eg= 64 bank_sel=0001 func3=4 func6=15 rd=16 eidx=  0
+[ISSUE] time=               63008 func3=4 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               63008 wvd_eg= 65 bank_sel=0010 func3=4 func6=15 rd=16 eidx=  4
+[PERMUTE-EXEC] time=               63008 func3=4 func6=15 compress=0 rgather=0 eidx=  0 wvd_eg= 64
+[PERMUTE-WRITE] time=               63008 eg= 64 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               63009 func3=4 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               63009 wvd_eg= 66 bank_sel=0100 func3=4 func6=15 rd=16 eidx=  8
+[PERMUTE-EXEC] time=               63009 func3=4 func6=15 compress=0 rgather=0 eidx=  4 wvd_eg= 65
+[PERMUTE-WRITE] time=               63009 eg= 65 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               63010 func3=4 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=16
+[COMMIT] time=               63010 wvd_eg= 67 bank_sel=1000 func3=4 func6=15 rd=16 eidx= 12
+[PERMUTE-EXEC] time=               63010 func3=4 func6=15 compress=0 rgather=0 eidx=  8 wvd_eg= 66
+[PERMUTE-WRITE] time=               63010 eg= 66 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[PERMUTE-EXEC] time=               63011 func3=4 func6=15 compress=0 rgather=0 eidx= 12 wvd_eg= 67
+[PERMUTE-WRITE] time=               63011 eg= 67 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               69391 func3=6 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               69391 wvd_eg= 64 bank_sel=0001 func3=6 func6=14 rd=16 eidx=  0
+[ISSUE] time=               69392 func3=6 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               69392 wvd_eg= 65 bank_sel=0010 func3=6 func6=14 rd=16 eidx=  4
+[PERMUTE-EXEC] time=               69392 func3=6 func6=14 compress=0 rgather=0 eidx=  0 wvd_eg= 64
+[PERMUTE-WRITE] time=               69392 eg= 64 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               69393 func3=6 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               69393 wvd_eg= 66 bank_sel=0100 func3=6 func6=14 rd=16 eidx=  8
+[PERMUTE-EXEC] time=               69393 func3=6 func6=14 compress=0 rgather=0 eidx=  4 wvd_eg= 65
+[PERMUTE-WRITE] time=               69393 eg= 65 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               69394 func3=6 func6=14 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=16
+[COMMIT] time=               69394 wvd_eg= 67 bank_sel=1000 func3=6 func6=14 rd=16 eidx= 12
+[PERMUTE-EXEC] time=               69394 func3=6 func6=14 compress=0 rgather=0 eidx=  8 wvd_eg= 66
+[PERMUTE-WRITE] time=               69394 eg= 66 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[PERMUTE-EXEC] time=               69395 func3=6 func6=14 compress=0 rgather=0 eidx= 12 wvd_eg= 67
+[PERMUTE-WRITE] time=               69395 eg= 67 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               75777 func3=6 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               75777 wvd_eg= 64 bank_sel=0001 func3=6 func6=15 rd=16 eidx=  0
+[ISSUE] time=               75778 func3=6 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               75778 wvd_eg= 65 bank_sel=0010 func3=6 func6=15 rd=16 eidx=  4
+[PERMUTE-EXEC] time=               75778 func3=6 func6=15 compress=0 rgather=0 eidx=  0 wvd_eg= 64
+[PERMUTE-WRITE] time=               75778 eg= 64 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               75779 func3=6 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               75779 wvd_eg= 66 bank_sel=0100 func3=6 func6=15 rd=16 eidx=  8
+[PERMUTE-EXEC] time=               75779 func3=6 func6=15 compress=0 rgather=0 eidx=  4 wvd_eg= 65
+[PERMUTE-WRITE] time=               75779 eg= 65 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               75780 func3=6 func6=15 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=16
+[COMMIT] time=               75780 wvd_eg= 67 bank_sel=1000 func3=6 func6=15 rd=16 eidx= 12
+[PERMUTE-EXEC] time=               75780 func3=6 func6=15 compress=0 rgather=0 eidx=  8 wvd_eg= 66
+[PERMUTE-WRITE] time=               75780 eg= 66 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[PERMUTE-EXEC] time=               75781 func3=6 func6=15 compress=0 rgather=0 eidx= 12 wvd_eg= 67
+[PERMUTE-WRITE] time=               75781 eg= 67 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               82160 func3=4 func6=12 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=16
+[COMMIT] time=               82160 wvd_eg= 64 bank_sel=0001 func3=4 func6=12 rd=16 eidx=  0
+[ISSUE] time=               82161 func3=4 func6=12 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=16
+[COMMIT] time=               82161 wvd_eg= 65 bank_sel=0010 func3=4 func6=12 rd=16 eidx=  4
+[PERMUTE-EXEC] time=               82161 func3=4 func6=12 compress=0 rgather=1 eidx=  0 wvd_eg= 64
+[PERMUTE-WRITE] time=               82161 eg= 64 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               82162 func3=4 func6=12 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=16
+[COMMIT] time=               82162 wvd_eg= 66 bank_sel=0100 func3=4 func6=12 rd=16 eidx=  8
+[PERMUTE-EXEC] time=               82162 func3=4 func6=12 compress=0 rgather=1 eidx=  4 wvd_eg= 65
+[PERMUTE-WRITE] time=               82162 eg= 65 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=               82163 func3=4 func6=12 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=16
+[COMMIT] time=               82163 wvd_eg= 67 bank_sel=1000 func3=4 func6=12 rd=16 eidx= 12
+[PERMUTE-EXEC] time=               82163 func3=4 func6=12 compress=0 rgather=1 eidx=  8 wvd_eg= 66
+[PERMUTE-WRITE] time=               82163 eg= 66 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[PERMUTE-EXEC] time=               82164 func3=4 func6=12 compress=0 rgather=1 eidx= 12 wvd_eg= 67
+[PERMUTE-WRITE] time=               82164 eg= 67 mask=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+[ISSUE] time=              104620 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              104620 wvd_eg=100 bank_sel=0001 func3=3 func6=23 rd=25 eidx=  0
+[ISSUE] time=              104621 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              104621 wvd_eg=101 bank_sel=0010 func3=3 func6=23 rd=25 eidx=  4
+[ISSUE] time=              104622 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              104622 wvd_eg=102 bank_sel=0100 func3=3 func6=23 rd=25 eidx=  8
+[COMMIT] time=              104623 wvd_eg=103 bank_sel=1000 func3=3 func6=23 rd=25 eidx= 12
+[ISSUE] time=              104632 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              104632 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  0
+[ISSUE] time=              104634 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              104634 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  4
+[ISSUE] time=              104636 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              104636 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  8
+[ISSUE] time=              104638 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              104638 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 12
+[ISSUE] time=              104640 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              104640 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 16
+[ISSUE] time=              104642 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              104642 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 16
+[ISSUE] time=              116709 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              116709 wvd_eg=100 bank_sel=0001 func3=3 func6=23 rd=25 eidx=  0
+[ISSUE] time=              116710 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              116710 wvd_eg=101 bank_sel=0010 func3=3 func6=23 rd=25 eidx=  4
+[ISSUE] time=              116711 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              116711 wvd_eg=102 bank_sel=0100 func3=3 func6=23 rd=25 eidx=  8
+[COMMIT] time=              116712 wvd_eg=103 bank_sel=1000 func3=3 func6=23 rd=25 eidx= 12
+[ISSUE] time=              116721 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              116721 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  0
+[ISSUE] time=              116723 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              116723 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  4
+[ISSUE] time=              116725 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              116725 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  8
+[ISSUE] time=              116727 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              116727 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 12
+[ISSUE] time=              116729 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              116729 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 16
+[ISSUE] time=              116731 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              116731 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 16
+[ISSUE] time=              129068 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              129068 wvd_eg=100 bank_sel=0001 func3=3 func6=23 rd=25 eidx=  0
+[ISSUE] time=              129069 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              129069 wvd_eg=101 bank_sel=0010 func3=3 func6=23 rd=25 eidx=  4
+[ISSUE] time=              129070 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              129070 wvd_eg=102 bank_sel=0100 func3=3 func6=23 rd=25 eidx=  8
+[COMMIT] time=              129071 wvd_eg=103 bank_sel=1000 func3=3 func6=23 rd=25 eidx= 12
+[ISSUE] time=              129080 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              129080 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  0
+[ISSUE] time=              129082 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              129082 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  4
+[ISSUE] time=              129084 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              129084 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  8
+[ISSUE] time=              129086 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              129086 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 12
+[ISSUE] time=              129088 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              129088 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 16
+[ISSUE] time=              129090 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              129090 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 16
+[ISSUE] time=              141419 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              141419 wvd_eg=100 bank_sel=0001 func3=3 func6=23 rd=25 eidx=  0
+[ISSUE] time=              141420 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              141420 wvd_eg=101 bank_sel=0010 func3=3 func6=23 rd=25 eidx=  4
+[ISSUE] time=              141421 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              141421 wvd_eg=102 bank_sel=0100 func3=3 func6=23 rd=25 eidx=  8
+[COMMIT] time=              141422 wvd_eg=103 bank_sel=1000 func3=3 func6=23 rd=25 eidx= 12
+[ISSUE] time=              141431 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              141431 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  0
+[ISSUE] time=              141433 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              141433 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  4
+[ISSUE] time=              141435 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              141435 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  8
+[ISSUE] time=              141437 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              141437 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 12
+[ISSUE] time=              141439 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              141439 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 16
+[ISSUE] time=              141441 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              141441 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 16
+[ISSUE] time=              155103 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              155103 wvd_eg=100 bank_sel=0001 func3=3 func6=23 rd=25 eidx=  0
+[ISSUE] time=              155104 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              155104 wvd_eg=101 bank_sel=0010 func3=3 func6=23 rd=25 eidx=  4
+[ISSUE] time=              155105 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              155105 wvd_eg=102 bank_sel=0100 func3=3 func6=23 rd=25 eidx=  8
+[COMMIT] time=              155106 wvd_eg=103 bank_sel=1000 func3=3 func6=23 rd=25 eidx= 12
+[ISSUE] time=              155115 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              155115 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  0
+[ISSUE] time=              155117 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              155117 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  4
+[ISSUE] time=              155119 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              155119 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  8
+[ISSUE] time=              155121 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              155121 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 12
+[ISSUE] time=              155123 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              155123 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 16
+[COMMIT] time=              155125 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 16
+[ISSUE] time=              155128 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              155128 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  0
+[ISSUE] time=              155130 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              155130 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  4
+[ISSUE] time=              155132 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              155132 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  8
+[ISSUE] time=              155134 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              155134 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 12
+[ISSUE] time=              155136 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              155136 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 16
+[COMMIT] time=              155138 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 16
+[ISSUE] time=              155141 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              155141 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  0
+[ISSUE] time=              155143 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              155143 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  4
+[ISSUE] time=              155145 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              155145 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  8
+[ISSUE] time=              155147 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              155147 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 12
+[ISSUE] time=              155149 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              155149 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 16
+[COMMIT] time=              155151 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 16
+[ISSUE] time=              155154 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              155154 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  0
+[ISSUE] time=              155156 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              155156 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  4
+[ISSUE] time=              155158 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              155158 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  8
+[ISSUE] time=              155160 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              155160 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 12
+[ISSUE] time=              155162 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              155162 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 16
+[ISSUE] time=              155164 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              155164 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 16
+[ISSUE] time=              177146 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              177146 wvd_eg=100 bank_sel=0001 func3=3 func6=23 rd=25 eidx=  0
+[ISSUE] time=              177147 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              177147 wvd_eg=101 bank_sel=0010 func3=3 func6=23 rd=25 eidx=  4
+[ISSUE] time=              177148 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              177148 wvd_eg=102 bank_sel=0100 func3=3 func6=23 rd=25 eidx=  8
+[COMMIT] time=              177149 wvd_eg=103 bank_sel=1000 func3=3 func6=23 rd=25 eidx= 12
+[ISSUE] time=              177152 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              177152 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  0
+[ISSUE] time=              177154 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              177154 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  4
+[ISSUE] time=              177156 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              177156 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  8
+[ISSUE] time=              177158 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              177158 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 12
+[ISSUE] time=              177160 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              177160 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 16
+[ISSUE] time=              177162 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              177162 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 16
+[ISSUE] time=              189239 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              189239 wvd_eg=100 bank_sel=0001 func3=3 func6=23 rd=25 eidx=  0
+[ISSUE] time=              189240 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              189240 wvd_eg=101 bank_sel=0010 func3=3 func6=23 rd=25 eidx=  4
+[ISSUE] time=              189241 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              189241 wvd_eg=102 bank_sel=0100 func3=3 func6=23 rd=25 eidx=  8
+[COMMIT] time=              189242 wvd_eg=103 bank_sel=1000 func3=3 func6=23 rd=25 eidx= 12
+[ISSUE] time=              189245 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              189245 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  0
+[ISSUE] time=              189247 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              189247 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  4
+[ISSUE] time=              189249 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              189249 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  8
+[ISSUE] time=              189251 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              189251 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 12
+[ISSUE] time=              189253 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              189253 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 16
+[ISSUE] time=              189255 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              189255 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 16
+[ISSUE] time=              201594 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              201594 wvd_eg=100 bank_sel=0001 func3=3 func6=23 rd=25 eidx=  0
+[ISSUE] time=              201595 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              201595 wvd_eg=101 bank_sel=0010 func3=3 func6=23 rd=25 eidx=  4
+[ISSUE] time=              201596 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              201596 wvd_eg=102 bank_sel=0100 func3=3 func6=23 rd=25 eidx=  8
+[COMMIT] time=              201597 wvd_eg=103 bank_sel=1000 func3=3 func6=23 rd=25 eidx= 12
+[ISSUE] time=              201600 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              201600 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  0
+[ISSUE] time=              201602 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              201602 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  4
+[ISSUE] time=              201604 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              201604 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  8
+[ISSUE] time=              201606 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              201606 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 12
+[ISSUE] time=              201608 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              201608 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 16
+[ISSUE] time=              201610 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              201610 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 16
+[ISSUE] time=              213953 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              213953 wvd_eg=100 bank_sel=0001 func3=3 func6=23 rd=25 eidx=  0
+[ISSUE] time=              213954 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              213954 wvd_eg=101 bank_sel=0010 func3=3 func6=23 rd=25 eidx=  4
+[ISSUE] time=              213955 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              213955 wvd_eg=102 bank_sel=0100 func3=3 func6=23 rd=25 eidx=  8
+[COMMIT] time=              213956 wvd_eg=103 bank_sel=1000 func3=3 func6=23 rd=25 eidx= 12
+[ISSUE] time=              213959 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              213959 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  0
+[ISSUE] time=              213961 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              213961 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  4
+[ISSUE] time=              213963 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              213963 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  8
+[ISSUE] time=              213965 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              213965 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 12
+[ISSUE] time=              213967 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              213967 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 16
+[ISSUE] time=              213969 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              213969 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 16
+[ISSUE] time=              227624 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              227624 wvd_eg=100 bank_sel=0001 func3=3 func6=23 rd=25 eidx=  0
+[ISSUE] time=              227625 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              227625 wvd_eg=101 bank_sel=0010 func3=3 func6=23 rd=25 eidx=  4
+[ISSUE] time=              227626 func3=3 func6=23 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              227626 wvd_eg=102 bank_sel=0100 func3=3 func6=23 rd=25 eidx=  8
+[COMMIT] time=              227627 wvd_eg=103 bank_sel=1000 func3=3 func6=23 rd=25 eidx= 12
+[ISSUE] time=              227630 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              227630 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  0
+[ISSUE] time=              227632 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              227632 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  4
+[ISSUE] time=              227634 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              227634 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx=  8
+[ISSUE] time=              227636 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              227636 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 12
+[ISSUE] time=              227638 func3=2 func6= 0 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              227638 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 16
+[COMMIT] time=              227640 wvd_eg=100 bank_sel=0001 func3=2 func6= 0 rd=25 eidx= 16
+[ISSUE] time=              227643 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              227643 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  0
+[ISSUE] time=              227645 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              227645 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  4
+[ISSUE] time=              227647 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              227647 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx=  8
+[ISSUE] time=              227649 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              227649 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 12
+[ISSUE] time=              227651 func3=2 func6= 2 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              227651 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 16
+[COMMIT] time=              227653 wvd_eg=100 bank_sel=0001 func3=2 func6= 2 rd=25 eidx= 16
+[ISSUE] time=              227656 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              227656 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  0
+[ISSUE] time=              227658 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              227658 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  4
+[ISSUE] time=              227660 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              227660 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx=  8
+[ISSUE] time=              227662 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              227662 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 12
+[ISSUE] time=              227664 func3=2 func6= 3 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              227664 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 16
+[COMMIT] time=              227666 wvd_eg=100 bank_sel=0001 func3=2 func6= 3 rd=25 eidx= 16
+[ISSUE] time=              227669 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  0 rd=25
+[COMMIT] time=              227669 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  0
+[ISSUE] time=              227671 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  4 rd=25
+[COMMIT] time=              227671 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  4
+[ISSUE] time=              227673 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx=  8 rd=25
+[COMMIT] time=              227673 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx=  8
+[ISSUE] time=              227675 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 12 rd=25
+[COMMIT] time=              227675 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 12
+[ISSUE] time=              227677 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              227677 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 16
+[ISSUE] time=              227679 func3=2 func6= 6 vs1_eew=2 vs2_eew=2 vd_eew=2 eidx= 16 rd=25
+[COMMIT] time=              227679 wvd_eg=100 bank_sel=0001 func3=2 func6= 6 rd=25 eidx= 16
+*** PASSED *** Completed after               469406 simulation cycles
